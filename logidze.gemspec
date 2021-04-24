@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   rails_version = ">= 5.0"
   spec.add_dependency "railties", rails_version
   spec.add_dependency "activerecord", rails_version
-  spec.add_dependency "ruby-next-core", "~> 0.9"
+  spec.add_dependency "ruby-next-core", "~> 0.9" if RUBY_VERSION < "3.0.0"
 
   spec.add_development_dependency "ammeter", "~> 1.1.3"
   spec.add_development_dependency "bundler", ">= 1.10"
